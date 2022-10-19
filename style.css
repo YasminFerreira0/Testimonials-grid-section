@@ -1,7 +1,23 @@
 
+.perfil {
+    border: solid 3px rgba(250, 250, 250, 0.233);
+    border-radius: 50%;
+}
 
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+}
 
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+}
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+}
 
+.kira, .jeanette {
+    background-color: hsl(0, 0%, 100%);
+}
 
 
 
