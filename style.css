@@ -1,7 +1,7 @@
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: hsl(210, 46%, 95%);
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .depoimentos {
@@ -17,17 +17,18 @@ body {
         align-items: center;  
     }
     .depoimentos {
-        width: 80vw;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin: 2.5vw 8.5vw;
     }
 }
 
 .caixa__depoimentos {
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: 10px;
+    padding: 30px;
     margin: 4vw;
 }
 
@@ -42,12 +43,19 @@ body {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 10px;
+
 }
 
 .perfil {
     border: solid 2px rgba(250, 250, 250, 0.233);
     border-radius: 50%;
     grid-row: span 2;
+}
+
+@media screen and (min-width: 770px) {
+    .perfil {
+        width: 3em;
+    }
 }
 
 .Nome__depoimento {
@@ -86,16 +94,23 @@ body {
 
 @media screen and (min-width: 770px) {
     .daniel {
-        grid-column: span 2;
+        grid-area: 1 / 1 / 2 / 3;
     }
 
+    .jonathan {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    
+    .jeanette {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
     .patrick {
-        grid-column: span 2;
+        grid-area: 2 / 2 / 3 / 4;
     }
     
     .kira {
-        grid-column-start: 4;
-        grid-row-start: 1;
+     grid-area: 1 / 4 / 3 / 5;
     }
 }
 
@@ -120,31 +135,31 @@ body {
 
 .texto-principal {
     color: hsl(0, 0%, 100%);
-    font-size: 1.9em;
+    font-size: 1.7em;
 }
 
 .texto-principal--preto {
     color: hsl(219, 29%, 14%);
-    font-size: 1.9em;
+    font-size: 1.7em;
 }
 
 .texto__depoimento {
     color: hsl(0, 0%, 100%);
     opacity: 70%;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .texto__depoimento--preto {
     color: hsl(219, 29%, 14%);
     opacity: 70%;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 
 
 
 .attribution {
-    padding: 5vw 0;
+    padding: 1vw 0;
     background-color: white;
     font-size: 12px; 
     text-align: center;
